@@ -1,0 +1,435 @@
+{
+  "@@locale": "ar",
+  "appName": "خيرات",
+  "appTagline": "خيرات الخليج لين باب بيتك",
+  "welcomeTitle": "عطور وعبايات وتمور من أهل الديرة",
+  "welcomeBody": "متجر تجريبي فيه تطبيقين: واجهة للعميل ولوحة تحكم للتاجر. اختر وش تبي تجرب.",
+  "shopAsCustomer": "تسوّق كعميل",
+  "shopAsCustomerBody": "تصفح، أضف للسلة، ادفع وتتبع طلبك",
+  "enterAsMerchant": "ادخل كتاجر",
+  "enterAsMerchantBody": "المبيعات والطلبات والمخزون والكوبونات",
+  "demoNote": "نسخة تجريبية: كل البيانات والمدفوعات وهمية",
+  "loginTitle": "سجّل دخولك",
+  "loginSubtitle": "بنرسل لك رمز تحقق على جوالك",
+  "phoneLabel": "رقم الجوال",
+  "phoneInvalid": "أدخل رقم جوال من 9 أرقام يبدأ بـ 5",
+  "sendCode": "أرسل الرمز",
+  "otpTitle": "أدخل رمز التحقق",
+  "otpHint": "أرسلنا رمزًا من 4 أرقام إلى {phone}. أي رمز يشتغل في النسخة التجريبية.",
+  "@otpHint": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "verify": "تحقق",
+  "continueAsGuest": "تصفح كزائر",
+  "navHome": "الرئيسية",
+  "navCategories": "الأقسام",
+  "navCart": "السلة",
+  "navOrders": "طلباتي",
+  "navAccount": "حسابي",
+  "greeting": "هلا {name}",
+  "@greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "greetingGuest": "هلا والله",
+  "deliverTo": "التوصيل إلى",
+  "searchHint": "ابحث عن عطر، عباية، تمر...",
+  "offerTitle": "عروض موسم الشتاء",
+  "offerBody": "خصم حتى 15% على العود والبخور والتمور المختارة",
+  "endsIn": "ينتهي خلال",
+  "shopNow": "تسوّق الآن",
+  "categories": "الأقسام",
+  "bestSellers": "الأكثر مبيعًا",
+  "newArrivals": "وصل حديثًا",
+  "giftIdeas": "أفكار هدايا",
+  "seeAll": "عرض الكل",
+  "freeShippingOver": "توصيل مجاني فوق {amount}",
+  "@freeShippingOver": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "productsCount": "{count, plural, =1{منتج واحد} =2{منتجين} few{{count} منتجات} other{{count} منتج}}",
+  "@productsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sortBy": "ترتيب",
+  "sortPopular": "الأكثر مبيعًا",
+  "sortPriceLow": "السعر: من الأقل",
+  "sortPriceHigh": "السعر: من الأعلى",
+  "sortRating": "الأعلى تقييمًا",
+  "sortNewest": "الأحدث",
+  "filter": "فلترة",
+  "all": "الكل",
+  "inStockOnly": "المتوفر فقط",
+  "onSaleOnly": "العروض فقط",
+  "maxPrice": "أعلى سعر: {amount}",
+  "@maxPrice": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "apply": "تطبيق",
+  "reset": "إعادة تعيين",
+  "noResults": "ما لقينا نتائج",
+  "noResultsBody": "جرّب كلمة ثانية أو تصفح الأقسام",
+  "recentSearches": "عمليات البحث الأخيرة",
+  "popularSearches": "الأكثر بحثًا",
+  "clear": "مسح",
+  "addToCart": "أضف للسلة",
+  "addedToCart": "أُضيف للسلة",
+  "viewCart": "عرض السلة",
+  "outOfStock": "نفدت الكمية",
+  "onlyLeft": "باقي {count} فقط",
+  "@onlyLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "inStock": "متوفر",
+  "description": "الوصف",
+  "reviews": "التقييمات",
+  "reviewsCount": "{count} تقييم",
+  "@reviewsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "similar": "منتجات مشابهة",
+  "chooseOption": "اختر",
+  "quantity": "الكمية",
+  "vatIncluded": "السعر شامل الضريبة",
+  "soldCount": "{count} مبيع",
+  "@soldCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "newBadge": "جديد",
+  "favorites": "المفضلة",
+  "favoritesEmpty": "ما عندك منتجات في المفضلة",
+  "favoritesEmptyBody": "اضغط على القلب في أي منتج عشان تحفظه هنا",
+  "cart": "السلة",
+  "cartEmpty": "سلتك فاضية",
+  "cartEmptyBody": "ابدأ التسوق واكتشف خيرات الخليج",
+  "startShopping": "ابدأ التسوق",
+  "toFreeShipping": "باقي {amount} وتحصل على توصيل مجاني",
+  "@toFreeShipping": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "freeShippingUnlocked": "مبروك! طلبك صار توصيله مجاني",
+  "couponHint": "كود الخصم",
+  "couponApplied": "تم تطبيق {code}",
+  "@couponApplied": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "couponNotFound": "الكود غير صحيح",
+  "couponInactive": "الكود منتهي",
+  "couponMin": "الكود يحتاج طلب بقيمة {amount} أو أكثر",
+  "@couponMin": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "remove": "إزالة",
+  "tryCodes": "جرّب KHAIRAT10 أو WELCOME50",
+  "giftWrap": "تغليف هدية",
+  "giftWrapBody": "صندوق فاخر مع بطاقة إهداء بـ {amount}",
+  "@giftWrapBody": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "giftMessageHint": "رسالة الإهداء (اختياري)",
+  "subtotal": "المجموع الفرعي",
+  "discount": "الخصم",
+  "shipping": "التوصيل",
+  "free": "مجاني",
+  "giftWrapFee": "التغليف",
+  "total": "الإجمالي",
+  "vatLine": "يشمل ضريبة القيمة المضافة {rate}%: {amount}",
+  "@vatLine": {
+    "placeholders": {
+      "rate": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "checkout": "إتمام الطلب",
+  "stockLimit": "الكمية المطلوبة أكثر من المتوفر",
+  "stepAddress": "العنوان",
+  "stepDelivery": "التوصيل",
+  "stepPayment": "الدفع",
+  "deliveryAddress": "عنوان التوصيل",
+  "edit": "تعديل",
+  "fullName": "الاسم",
+  "city": "المدينة",
+  "district": "الحي",
+  "street": "الشارع ورقم المبنى",
+  "nationalAddress": "العنوان الوطني المختصر",
+  "save": "حفظ",
+  "cancel": "إلغاء",
+  "deliveryTime": "موعد التوصيل",
+  "slotExpress": "توصيل سريع",
+  "slotExpressBody": "خلال 3 ساعات داخل المدينة",
+  "slotStandard": "توصيل عادي",
+  "slotStandardBody": "خلال 1-2 يوم عمل",
+  "slotScheduled": "توصيل مجدول",
+  "slotScheduledBody": "تختار اليوم اللي يناسبك",
+  "paymentMethod": "طريقة الدفع",
+  "payMada": "مدى / بطاقة",
+  "payMadaBody": "مدى، فيزا، ماستركارد",
+  "payApple": "Apple Pay",
+  "payAppleBody": "ادفع بلمسة",
+  "paySTC": "STC Pay",
+  "paySTCBody": "ادفع من محفظتك",
+  "payTabby": "تابي",
+  "payTabbyBody": "قسّمها على 4: {amount} كل شهر بدون فوائد",
+  "@payTabbyBody": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "payCod": "الدفع عند الاستلام",
+  "payCodBody": "نقدًا أو بالشبكة عند وصول الطلب",
+  "cardNumber": "رقم البطاقة",
+  "cardExpiry": "تاريخ الانتهاء",
+  "cardCvv": "CVV",
+  "cardHolder": "الاسم على البطاقة",
+  "next": "التالي",
+  "payAmount": "ادفع {amount}",
+  "@payAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "placeOrderCod": "أكّد الطلب",
+  "processing": "جاري معالجة الدفع...",
+  "paymentMock": "دفع تجريبي، ما راح ينخصم أي مبلغ",
+  "applePaySheetPay": "ادفع لـ خيرات",
+  "applePayConfirm": "اضغط للتأكيد",
+  "stcOtp": "أدخل رمز STC Pay المرسل لجوالك",
+  "tabbyPlan": "خطة الدفع",
+  "tabbyToday": "اليوم",
+  "tabbyInMonths": "بعد {count} شهر",
+  "@tabbyInMonths": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "orderPlaced": "تم استلام طلبك!",
+  "orderPlacedBody": "رقم الطلب {id}. بنعطيك خبر مع كل خطوة.",
+  "@orderPlacedBody": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "trackOrder": "تتبع الطلب",
+  "viewInvoice": "الفاتورة",
+  "continueShopping": "متابعة التسوق",
+  "myOrders": "طلباتي",
+  "ordersActive": "الحالية",
+  "ordersPast": "السابقة",
+  "ordersEmpty": "ما عندك طلبات هنا",
+  "itemsCount": "{count, plural, =1{منتج واحد} =2{منتجين} few{{count} منتجات} other{{count} منتج}}",
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "statusPlaced": "تم الطلب",
+  "statusConfirmed": "تم التأكيد",
+  "statusPreparing": "قيد التجهيز",
+  "statusShipped": "مع المندوب",
+  "statusDelivered": "تم التوصيل",
+  "statusCancelled": "ملغي",
+  "statusPlacedBody": "استلمنا طلبك",
+  "statusConfirmedBody": "التاجر أكّد الطلب",
+  "statusPreparingBody": "نجهّز ونغلّف طلبك",
+  "statusShippedBody": "المندوب في الطريق لك",
+  "statusDeliveredBody": "وصل طلبك، بالعافية",
+  "statusCancelledBody": "تم إلغاء الطلب ورجعنا المبلغ",
+  "orderNo": "طلب {id}",
+  "@orderNo": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "orderItems": "المنتجات",
+  "courier": "المندوب: سالم • 4.9★",
+  "eta": "الوصول المتوقع: {time}",
+  "@eta": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "cancelOrder": "إلغاء الطلب",
+  "cancelConfirm": "متأكد تبي تلغي الطلب؟",
+  "cancelYes": "نعم، ألغِ",
+  "keepOrder": "تراجع",
+  "orderCancelled": "تم إلغاء الطلب",
+  "reorder": "اطلب مرة ثانية",
+  "reorderDone": "أضفنا المنتجات للسلة",
+  "rateOrder": "قيّم طلبك",
+  "rateTitle": "كيف كانت تجربتك؟",
+  "rateThanks": "شكرًا على تقييمك!",
+  "submit": "إرسال",
+  "giftMessage": "رسالة الإهداء",
+  "invoiceTitle": "فاتورة ضريبية مبسطة",
+  "seller": "البائع",
+  "sellerName": "مؤسسة خيرات للتجارة",
+  "vatNumber": "الرقم الضريبي",
+  "invoiceDate": "التاريخ",
+  "paidWith": "طريقة الدفع",
+  "invoiceQrNote": "رمز QR بصيغة هيئة الزكاة (تجريبي)",
+  "demoAdvance": "تجربة: انقل الطلب للخطوة الجاية",
+  "account": "حسابي",
+  "guest": "زائر",
+  "signIn": "تسجيل الدخول",
+  "language": "اللغة",
+  "languageValue": "العربية",
+  "darkMode": "الوضع الداكن",
+  "region": "الدولة والعملة",
+  "regionSa": "السعودية (ر.س، ضريبة 15%)",
+  "regionAe": "الإمارات (د.إ، ضريبة 5%)",
+  "switchToMerchant": "الانتقال للوحة التاجر",
+  "switchToCustomer": "الانتقال لواجهة العميل",
+  "switchRole": "تبديل الواجهة",
+  "resetDemo": "إعادة بيانات الديمو",
+  "resetDone": "رجعت البيانات للبداية",
+  "about": "عن التطبيق",
+  "aboutBody": "تطبيق تجريبي لمعرض الأعمال، مبني بـ Flutter لأندرويد وiOS والويب من كود واحد.",
+  "dashboard": "لوحة التحكم",
+  "merchantHello": "صباح الخير، متجر خيرات",
+  "todaySales": "مبيعات اليوم",
+  "ordersToday": "طلبات اليوم",
+  "avgOrder": "متوسط الطلب",
+  "weekSales": "مبيعات 7 أيام",
+  "salesChart": "المبيعات آخر 7 أيام",
+  "topProducts": "الأكثر مبيعًا",
+  "lowStockAlert": "{count, plural, =1{منتج واحد قارب يخلص} =2{منتجين قاربوا يخلصون} few{{count} منتجات قاربت تخلص} other{{count} منتج قارب يخلص}}",
+  "@lowStockAlert": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "needsAction": "طلبات تنتظرك",
+  "orders": "الطلبات",
+  "products": "المنتجات",
+  "coupons": "الكوبونات",
+  "moveTo": "نقل إلى: {status}",
+  "@moveTo": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "statusUpdated": "الحالة صارت: {status}",
+  "@statusUpdated": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "customer": "العميل",
+  "stock": "المخزون",
+  "price": "السعر",
+  "visible": "معروض في المتجر",
+  "hidden": "مخفي",
+  "editProduct": "تعديل المنتج",
+  "saved": "تم الحفظ",
+  "newCoupon": "كوبون جديد",
+  "couponCode": "الكود",
+  "percentOff": "نسبة %",
+  "fixedOff": "مبلغ ثابت",
+  "couponValue": "القيمة",
+  "minOrder": "الحد الأدنى للطلب",
+  "couponUses": "استُخدم {count} مرة",
+  "@couponUses": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "create": "إنشاء",
+  "couponExists": "الكود موجود من قبل",
+  "active": "فعّال",
+  "inactive": "موقوف",
+  "lowStock": "قارب يخلص",
+  "sideTitle": "خيرات: متجر المنتجات الخليجية",
+  "sideBody": "تطبيق Flutter كامل يشتغل على أندرويد وiOS والويب. جرّبه بنفسك في الجوال جنبك.",
+  "sideF1": "دفع بمدى وApple Pay وSTC Pay وتابي",
+  "sideF2": "فاتورة بضريبة 15% ورمز QR",
+  "sideF3": "تتبع الطلب لحظة بلحظة",
+  "sideF4": "لوحة تاجر للطلبات والمخزون والكوبونات",
+  "sideF5": "عربي وإنجليزي، فاتح وداكن",
+  "bannerGiftBody": "تغليف فاخر وبطاقة إهداء مع أي طلب",
+  "bannerDatesTitle": "موسم التمور وصل",
+  "bannerDatesBody": "سكري وعجوة وخلاص من المزارع مباشرة",
+  "allProducts": "كل المنتجات",
+  "vatAmount": "ضريبة القيمة المضافة {rate}%",
+  "@vatAmount": {
+    "placeholders": {
+      "rate": {
+        "type": "String"
+      }
+    }
+  },
+  "orderNumber": "رقم الطلب",
+  "mockData": "بيانات تجريبية"
+}

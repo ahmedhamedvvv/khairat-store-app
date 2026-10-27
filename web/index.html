@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="خيرات: متجر Flutter للعطور والعبايات والتمور مع مدى وApple Pay وتتبع الطلبات. Khairat: a Flutter store demo for Gulf local products.">
+  <meta name="theme-color" content="#4A2C21">
+  <meta property="og:title" content="خيرات | Khairat store demo">
+  <meta property="og:description" content="Flutter store demo: perfumes, abayas and dates with mada, Apple Pay, STC Pay and Tabby checkout.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="خيرات">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>خيرات | Khairat</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #2E1A13; }
+    #splash { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 18px; font-family: system-ui, sans-serif; color: #C9A35B; transition: opacity .4s; }
+    #splash img { width: 88px; height: 88px; animation: pulse 1.4s ease-in-out infinite; }
+    @keyframes pulse { 50% { transform: scale(1.08); opacity: .8; } }
+  </style>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div id="splash"><img src="icons/Icon-192.png" alt=""><div>خيرات</div></div>
+  <!--
+    You can customize the "flutter_bootstrap.js" script.
+    This is useful to provide a custom configuration to the Flutter loader
+    or to give the user feedback during the initialization process.
+
+    For more details:
+    * https://docs.flutter.dev/platform-integration/web/initialization
+  -->
+  <script>
+    window.addEventListener("flutter-first-frame", function () {
+      var s = document.getElementById("splash");
+      if (s) { s.style.opacity = "0"; setTimeout(function () { s.remove(); }, 400); }
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
