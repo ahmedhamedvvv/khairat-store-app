@@ -59,7 +59,7 @@ flutter run -d chrome       # web
 flutter test
 ```
 
-On wide screens the web build shows the app inside a phone frame with a side panel. Add `?embed=1` to the URL to show the app alone (used for embedding in the portfolio site).
+On wide screens the web build shows the app inside a phone frame with a side panel. Add `?embed=1` to the URL to show the app alone (used for embedding in the portfolio site), and `?lang=en` or `?lang=ar` to pick the starting language.
 
 ## لقطات · Screenshots
 

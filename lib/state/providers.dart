@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../core/phone_frame.dart';
 import '../data/models.dart';
 import '../data/pricing.dart';
 import '../data/repository.dart';
@@ -41,7 +42,12 @@ class AppSettings {
 
 class SettingsNotifier extends Notifier<AppSettings> {
   @override
-  AppSettings build() => AppSettings.fromJson(ref.read(repositoryProvider).loadSettings());
+  AppSettings build() {
+    final saved = AppSettings.fromJson(ref.read(repositoryProvider).loadSettings());
+    // ?lang=en|ar lets the showcase site pick the starting language.
+    final lang = launchParam('lang');
+    return lang == 'ar' || lang == 'en' ? saved.copyWith(locale: Locale(lang!)) : saved;
+  }
 
   void _set(AppSettings s) {
     state = s;

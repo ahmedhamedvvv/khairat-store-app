@@ -6,13 +6,17 @@ import 'format.dart';
 import 'theme.dart';
 
 /// `?embed=1` drops the frame so the portfolio site can iframe the app in its own mockup.
-final bool embedMode = () {
+/// Reads a launch parameter from the URL, before or after the `#` (hash routing).
+String? launchParam(String name) {
   final base = Uri.base;
-  if (base.queryParameters['embed'] == '1') return true;
+  final direct = base.queryParameters[name];
+  if (direct != null) return direct;
   final frag = base.fragment;
   final q = frag.indexOf('?');
-  return q >= 0 && Uri.splitQueryString(frag.substring(q + 1))['embed'] == '1';
-}();
+  return q >= 0 ? Uri.splitQueryString(frag.substring(q + 1))[name] : null;
+}
+
+final bool embedMode = launchParam('embed') == '1';
 
 const _phone = Size(390, 844);
 
