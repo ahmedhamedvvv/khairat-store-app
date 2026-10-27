@@ -27,6 +27,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/photos/
   generate: true
   fonts:
     - family: IBMPlexSansArabic

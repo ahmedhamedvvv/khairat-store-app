@@ -8,6 +8,7 @@ import 'package:go_router/go_router.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../data/models.dart';
+import '../../data/photos.dart';
 import '../../data/pricing.dart';
 import '../../data/seed.dart';
 import '../../state/providers.dart';
@@ -256,7 +257,7 @@ class _CategoryChip extends StatelessWidget {
             SizedBox(
               width: 96,
               height: 92,
-              child: ProductArt(kind: category.art, color: category.color, accent: Palette.gold, radius: Tokens.cardRadius),
+              child: ProductArt(kind: category.art, color: category.color, accent: Palette.gold, radius: Tokens.cardRadius, photo: categoryPhoto(category.id)),
             ),
             const SizedBox(height: 8),
             Text(category.name.of(context), style: context.text.labelLarge, maxLines: 1, overflow: TextOverflow.ellipsis),

@@ -3,29 +3,34 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../data/models.dart';
+import '../data/photos.dart';
 
-/// Vector illustration of a product, so the demo ships without photos and
-/// stays crisp at any size. A real store swaps this for network images.
+/// A product's photo when one ships in assets/photos/, otherwise a vector
+/// illustration that stays crisp at any size.
 class ProductArt extends StatelessWidget {
-  const ProductArt({super.key, required this.kind, required this.color, required this.accent, this.background = true, this.radius = 20});
+  const ProductArt({super.key, required this.kind, required this.color, required this.accent, this.background = true, this.radius = 20, this.photo});
 
-  ProductArt.of(Product p, {super.key, this.background = true, this.radius = 20}) : kind = p.art, color = p.color, accent = p.accent;
+  ProductArt.of(Product p, {super.key, this.background = true, this.radius = 20}) : kind = p.art, color = p.color, accent = p.accent, photo = productPhoto(p.id);
 
   final ArtKind kind;
   final Color color;
   final Color accent;
   final bool background;
   final double radius;
+  final String? photo;
 
   @override
   Widget build(BuildContext context) {
     final dark = Theme.of(context).brightness == Brightness.dark;
+    final art = CustomPaint(
+      painter: _ArtPainter(kind, color, accent, background: background, dark: dark),
+      child: const SizedBox.expand(),
+    );
     return ClipRRect(
       borderRadius: BorderRadius.circular(radius),
-      child: CustomPaint(
-        painter: _ArtPainter(kind, color, accent, background: background, dark: dark),
-        child: const SizedBox.expand(),
-      ),
+      child: photo == null
+          ? art
+          : Image.asset(photo!, fit: BoxFit.cover, width: double.infinity, height: double.infinity, errorBuilder: (_, _, _) => art),
     );
   }
 }

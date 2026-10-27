@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../data/models.dart';
+import '../../data/photos.dart';
 import '../../data/seed.dart';
 import '../../state/providers.dart';
 import '../../widgets/common.dart';
@@ -65,7 +66,7 @@ class CategoriesScreen extends ConsumerWidget {
                     ),
                     SizedBox(
                       width: 140,
-                      child: ProductArt(kind: c.art, color: Color.lerp(c.color, Colors.white, 0.2)!, accent: Palette.gold, background: false),
+                      child: ProductArt(kind: c.art, color: Color.lerp(c.color, Colors.white, 0.2)!, accent: Palette.gold, background: false, photo: categoryPhoto(c.id)),
                     ),
                   ],
                 ),
