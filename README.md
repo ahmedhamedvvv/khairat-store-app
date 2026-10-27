@@ -70,3 +70,41 @@ On wide screens the web build shows the app inside a phone frame with a side pan
 | ![](docs/screenshots/en_home.png) | ![](docs/screenshots/en_product.png) | ![](docs/screenshots/en_cat.png) | ![](docs/screenshots/en_account.png) |
 
 ![Desktop](docs/screenshots/d1.png)
+
+## الصور · Photo credits
+
+Product and category photos are free stock photos from [Pexels](https://www.pexels.com) under the [Pexels License](https://www.pexels.com/license/), resized and cropped to squares. Source photo per item:
+
+- `p1`: [pexels.com/photo/16239693](https://www.pexels.com/photo/16239693/)
+- `p2`: [pexels.com/photo/12402366](https://www.pexels.com/photo/12402366/)
+- `p3`: [pexels.com/photo/8450248](https://www.pexels.com/photo/8450248/)
+- `p4`: [pexels.com/photo/4041392](https://www.pexels.com/photo/4041392/)
+- `p5`: [pexels.com/photo/7947731](https://www.pexels.com/photo/7947731/)
+- `p6`: [pexels.com/photo/8054395](https://www.pexels.com/photo/8054395/)
+- `p7`: [pexels.com/photo/12741172](https://www.pexels.com/photo/12741172/)
+- `p8`: [pexels.com/photo/25525915](https://www.pexels.com/photo/25525915/)
+- `p9`: [pexels.com/photo/10487658](https://www.pexels.com/photo/10487658/)
+- `p10`: [pexels.com/photo/7249217](https://www.pexels.com/photo/7249217/)
+- `a1`: [pexels.com/photo/8526255](https://www.pexels.com/photo/8526255/)
+- `a2`: [pexels.com/photo/34658761](https://www.pexels.com/photo/34658761/)
+- `a3`: [pexels.com/photo/13791336](https://www.pexels.com/photo/13791336/)
+- `a4`: [pexels.com/photo/35324626](https://www.pexels.com/photo/35324626/)
+- `a5`: [pexels.com/photo/9218640](https://www.pexels.com/photo/9218640/)
+- `a6`: [pexels.com/photo/7249214](https://www.pexels.com/photo/7249214/)
+- `a7`: [pexels.com/photo/8911826](https://www.pexels.com/photo/8911826/)
+- `a8`: [pexels.com/photo/7249759](https://www.pexels.com/photo/7249759/)
+- `a9`: [pexels.com/photo/9218394](https://www.pexels.com/photo/9218394/)
+- `a10`: [pexels.com/photo/19987022](https://www.pexels.com/photo/19987022/)
+- `d1`: [pexels.com/photo/4469611](https://www.pexels.com/photo/4469611/)
+- `d2`: [pexels.com/photo/15913420](https://www.pexels.com/photo/15913420/)
+- `d3`: [pexels.com/photo/15913411](https://www.pexels.com/photo/15913411/)
+- `d4`: [pexels.com/photo/3993529](https://www.pexels.com/photo/3993529/)
+- `d5`: [pexels.com/photo/20488301](https://www.pexels.com/photo/20488301/)
+- `d6`: [pexels.com/photo/2291592](https://www.pexels.com/photo/2291592/)
+- `d7`: [pexels.com/photo/12042620](https://www.pexels.com/photo/12042620/)
+- `d8`: [pexels.com/photo/9762169](https://www.pexels.com/photo/9762169/)
+- `d9`: [pexels.com/photo/30361023](https://www.pexels.com/photo/30361023/)
+- `d10`: [pexels.com/photo/30146018](https://www.pexels.com/photo/30146018/)
+- `cat_perfumes`: [pexels.com/photo/16722501](https://www.pexels.com/photo/16722501/)
+- `cat_abayas`: [pexels.com/photo/2911204](https://www.pexels.com/photo/2911204/)
+- `cat_dates`: [pexels.com/photo/4499229](https://www.pexels.com/photo/4499229/)

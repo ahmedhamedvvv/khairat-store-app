@@ -305,9 +305,9 @@ class _OfferCarouselState extends State<_OfferCarousel> {
     final left = _endsAt.difference(DateTime.now());
     String two(int v) => v.toString().padLeft(2, '0');
     final banners = [
-      (s.offerTitle, s.offerBody, ArtKind.burner, const Color(0xFF7A4B2A), '/category/perfumes?f=sale', true),
-      (s.giftIdeas, s.bannerGiftBody, ArtKind.gift, const Color(0xFF4A1E2C), '/product/p10', false),
-      (s.bannerDatesTitle, s.bannerDatesBody, ArtKind.datesBox, const Color(0xFF8A5A2B), '/category/dates', false),
+      (s.offerTitle, s.offerBody, ArtKind.burner, const Color(0xFF7A4B2A), '/category/perfumes?f=sale', true, productPhoto('p2')),
+      (s.giftIdeas, s.bannerGiftBody, ArtKind.gift, const Color(0xFF4A1E2C), '/product/p10', false, productPhoto('p10')),
+      (s.bannerDatesTitle, s.bannerDatesBody, ArtKind.datesBox, const Color(0xFF8A5A2B), '/category/dates', false, productPhoto('d1')),
     ];
     return Column(
       children: [
@@ -319,7 +319,7 @@ class _OfferCarouselState extends State<_OfferCarousel> {
             itemCount: banners.length,
             onPageChanged: (i) => setState(() => _index = i),
             itemBuilder: (_, i) {
-              final (title, body, art, color, route, countdown) = banners[i];
+              final (title, body, art, color, route, countdown, photo) = banners[i];
               return Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 4),
                 child: Material(
@@ -330,13 +330,32 @@ class _OfferCarouselState extends State<_OfferCarousel> {
                     onTap: () => context.push(route),
                     child: Stack(
                       children: [
-                        PositionedDirectional(
-                          end: -10,
-                          top: 0,
-                          bottom: 0,
-                          width: 160,
-                          child: ProductArt(kind: art, color: Color.lerp(color, Colors.white, 0.15)!, accent: Palette.gold, background: false),
-                        ),
+                        if (photo == null)
+                          PositionedDirectional(
+                            end: -10,
+                            top: 0,
+                            bottom: 0,
+                            width: 160,
+                            child: ProductArt(kind: art, color: Color.lerp(color, Colors.white, 0.15)!, accent: Palette.gold, background: false),
+                          )
+                        else ...[
+                          Positioned.fill(
+                            child: Image.asset(photo, fit: BoxFit.cover, alignment: AlignmentDirectional.centerEnd.resolve(Directionality.of(context))),
+                          ),
+                          // Fade the photo into the banner color behind the text.
+                          Positioned.fill(
+                            child: DecoratedBox(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: AlignmentDirectional.centerStart.resolve(Directionality.of(context)),
+                                  end: AlignmentDirectional.centerEnd.resolve(Directionality.of(context)),
+                                  colors: [color, color.withValues(alpha: 0.9), color.withValues(alpha: 0)],
+                                  stops: const [0, 0.45, 0.85],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                         Padding(
                           padding: const EdgeInsets.all(Tokens.s16),
                           child: Column(

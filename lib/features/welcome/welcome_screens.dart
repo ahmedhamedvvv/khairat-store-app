@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 import '../../core/format.dart';
 import '../../core/theme.dart';
 import '../../data/models.dart';
+import '../../data/photos.dart';
 import '../../state/providers.dart';
 import '../../widgets/product_art.dart';
 
@@ -17,9 +18,9 @@ class WelcomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final s = context.s;
     final arts = [
-      (ArtKind.bottle, const Color(0xFF5A2E22), const Color(0xFFD4AF6A)),
-      (ArtKind.abaya, const Color(0xFF16161B), const Color(0xFFC9A35B)),
-      (ArtKind.datesBowl, const Color(0xFF5C2E1A), const Color(0xFFA7663A)),
+      (ArtKind.bottle, const Color(0xFF5A2E22), const Color(0xFFD4AF6A), productPhoto('p2')),
+      (ArtKind.abaya, const Color(0xFF16161B), const Color(0xFFC9A35B), productPhoto('a1')),
+      (ArtKind.datesBowl, const Color(0xFF5C2E1A), const Color(0xFFA7663A), productPhoto('d1')),
     ];
     return Scaffold(
       backgroundColor: Palette.oudDeep,
@@ -58,7 +59,7 @@ class WelcomeScreen extends ConsumerWidget {
                           Expanded(
                             child: Padding(
                               padding: EdgeInsets.only(top: i == 1 ? 0 : 36, left: 6, right: 6),
-                              child: ProductArt(kind: arts[i].$1, color: arts[i].$2, accent: arts[i].$3, radius: 24)
+                              child: ProductArt(kind: arts[i].$1, color: arts[i].$2, accent: arts[i].$3, radius: 24, photo: arts[i].$4)
                                   .animate(onPlay: (c) => c.repeat(reverse: true))
                                   .moveY(begin: 0, end: -8, duration: (1600 + i * 300).ms, curve: Curves.easeInOut),
                             ).animate().fadeIn(delay: (120 * i).ms, duration: 500.ms).slideY(begin: 0.2, curve: Curves.easeOutCubic),
