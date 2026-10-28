@@ -4,7 +4,7 @@
 
 An Arabic-first Flutter storefront for Gulf local products (perfumes & oud, abayas, dates & coffee) with a full merchant dashboard. All data is mocked and stored on the device, so the demo runs with no backend.
 
-**Live demo:** _coming soon (GitHub Pages)_
+**Live demo:** https://ahmedhamedvvv.github.io/khairat-store-app/ · **Android APK:** https://ahmedhamedvvv.github.io/khairat-store-app/khairat.apk
 
 <p>
   <img src="docs/screenshots/home.png" width="200">
